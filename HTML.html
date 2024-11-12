@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.io.png" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #F3EDE4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .product-card {
+      width: 350px;
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-image img {
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      color: #666;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .price {
+      font-size: 28px;
+      color: #217A40;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .price del {
+      color: #999;
+      font-size: 16px;
+      font-weight: normal;
+      margin-left: 10px;
+    }
+
+    .add-to-cart {
+      display: inline-block;
+      width: 100%;
+      padding: 12px 0;
+      background-color: #217A40;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .add-to-cart:hover {
+      background-color: #195F30;
+    }
+
+    .category {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoV5lE3S4fDG5BOXaeSiMm55qQUsnZRbn-owK2M7tYnNEa9jfh" alt="Gabrielle Essence Perfume">
+    </div>
+    <div class="product-info">
+      <p class="category">Perfume</p>
+      <h2>Gabrielle Essence Eau De Parfum</h2>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <p class="price">$149.99 <del>$169.99</del></p>
+      <a href="#" class="add-to-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </div>
+</body>
+</html>
